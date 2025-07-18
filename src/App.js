@@ -1,9 +1,9 @@
-/* global __firebase_config, __app_id, __initial_auth_token, XLSX */
+/* global __firebase_config, __app_id, __initial_auth_token */
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { initializeApp, getApps } from 'firebase/app';
 import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken } from 'firebase/auth';
-import { getFirestore, doc, onSnapshot, setDoc, collection, getDocs, addDoc, deleteDoc, serverTimestamp, updateDoc, query, where, documentId } from 'firebase/firestore';
-import { ArrowLeft, ArrowRight, Calendar, PlusCircle, User, X, Shield, Save, LogOut, Trash2, Edit, Clock, Coffee, GanttChartSquare, CheckCircle, BarChart3, Send, Bell, History, Sun, Moon, ThumbsUp, ThumbsDown, ArrowDown, Users, Copy, Upload, Printer, UserCog } from 'lucide-react';
+import { getFirestore, doc, onSnapshot, setDoc, collection, addDoc, deleteDoc, serverTimestamp, updateDoc, query, where, documentId } from 'firebase/firestore';
+import { ArrowLeft, ArrowRight, Calendar, PlusCircle, User, X, Shield, Save, LogOut, Trash2, Edit, Clock, GanttChartSquare, CheckCircle, BarChart3, Send, Bell, History, ThumbsUp, ThumbsDown, ArrowDown, Users, Copy, Upload, Printer, UserCog } from 'lucide-react';
 
 // --- URL IMMAGINI BRAND ---
 const LOGO_URL = 'visonottica-sfondo.png';
